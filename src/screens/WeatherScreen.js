@@ -1,24 +1,27 @@
-import { View, Text, StyleSheet, Button, Alert, TextInput, TouchableOpacity, SafeAreaView } from 'react-native';
+import { View, Text, StyleSheet, Button, Image } from 'react-native';
 import React, { useState } from 'react';
 
 //consultas apis
-import { qConsultarClima } from '../config/ApiQuerys';
+import { getApi, qPredecirEdad, qPredecirGenero, qConsultarClima } from '../config/ApiQuerys';
 
 
-const YearScreen = () => {
-    const [resultado, setResultado] = useState([]);
+const WeatherScreen = () => {
+    const [resultado, setResultado] = useState(Array);
 
     const handleFunction = () => {
-      setResultado(qConsultarClima());
+      qConsultarClima();
     };
 
     return (
         <View style={styles.container}>
+            <Image 
+                source={{ uri: "https://images.fineartamerica.com/images-medium-large-5/hispaniola-mda-information-systemsscience-photo-library.jpg" }}
+                style={{ width: "100%", height: 200 }}
+            />
             <Button 
                 title="Clima"
                 onPress={() => handleFunction()}
             />
-            <Text>{resultado}</Text>
         </View>
     )
 }
@@ -40,4 +43,4 @@ const styles = StyleSheet.create({
 })
   
 
-export default YearScreen
+export default WeatherScreen

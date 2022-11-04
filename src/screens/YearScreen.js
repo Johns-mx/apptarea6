@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Button, Alert, TextInput, TouchableOpacity, SafeAreaView } from 'react-native'
+import { View, Text, StyleSheet, Button, Alert, TextInput, TouchableOpacity, SafeAreaView, Image } from 'react-native'
 import React, { useState } from 'react'
 import axios from 'axios';
 
@@ -13,6 +13,10 @@ const YearScreen = () => {
 
     return (
         <View style={styles.container}>
+            <Image 
+                source={{ uri: "https://th.bing.com/th/id/R.bb0074e0a3f842a108bb9ffff2503bf9?rik=EgdvI4%2b%2b6StERA&pid=ImgRaw&r=0" }}
+                style={{ width: "100%", height: 200, marginBottom: 20 }}
+            />
             <TextInput 
                 style={styles.input}
                 placeholder="Nombre"

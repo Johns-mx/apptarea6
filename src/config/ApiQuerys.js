@@ -45,7 +45,6 @@ export async function qPredecirGenero(name) {
             //alert(JSON.stringify(response.data.gender));
             if (response.data.gender == "male") {
                 Alert.alert("Genero", "Masculino");
-                return "Masculino"
             } else if (response.data.gender == "female") {
                 Alert.alert("Genero", "Femenino");
             } else {
@@ -107,7 +106,6 @@ export async function qConsultarUniversidad(pais) {
         .then(function (response) {
             // handle success
             Alert.alert("Universidades", JSON.stringify(response.data));
-            //return response.data
         })
         .catch(function (error) {
             // handle error
@@ -130,8 +128,7 @@ export async function qConsultarClima() {
     await axios(config)
         .then(function (response) {
             // handle success
-            //Alert.alert("Clima", JSON.stringify(response?.data.weather[0]["description"]));
-            return JSON.stringify(response?.data.weather[0]["description"]);
+            Alert.alert("Clima", JSON.stringify(response?.data.weather[0]["description"]));
         })
         .catch(function (error) {
             // handle error
