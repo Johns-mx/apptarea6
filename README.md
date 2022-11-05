@@ -2,4 +2,5 @@
 Tarea6 - Introduccion al desarrollo de apps moviles
 
 
-𝕃𝕒 𝕒𝕡𝕜 𝕕𝕖 𝕝𝕒 𝕒𝕡𝕡 𝕖𝕤𝕥𝕒 𝕖𝕟 𝕖𝕤𝕥𝕖 𝕣𝕖𝕡𝕠𝕤𝕚𝕥𝕠𝕣𝕚𝕠.
+Aqui te dejo el link donde tengo alojada la apk:
+https://drive.google.com/file/d/13uZoSODrEJobaDnxguDWpDVoOpF2p1Wz/view?usp=sharing
